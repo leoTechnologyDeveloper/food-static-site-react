@@ -1,6 +1,6 @@
 # Demo
 
-https://menu-and-hero.netlify.app/
+https://food-static-site-react.netlify.app/
 
 
 # React + Vite
