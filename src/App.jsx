@@ -1,12 +1,23 @@
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
+import ProductosContainer from "./Components/ProductosContainer";
+import Opiniones from "./Components/Opiniones";
+import Porque from "./Components/Porque";
+import Preguntas from "./Components/Preguntas";
+import Contacto from "./Components/Contacto";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <div className="bg-blue-800 text-white w-full h-screen"></div>
+      <ProductosContainer />
+      <Opiniones />
+      <Porque />
+      <Preguntas />
+      <Contacto />
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@ const Header = () => {
     { name: "Home", link: "/" },
     { name: "Pastas", link: "/pastas" },
     { name: "Pizzas", link: "/pizzas" },
-    { name: "Drinks", link: "/drinks" },
+    { name: "Lasañas", link: "/drinks" },
   ];
 
   const [isOpen, setisOpen] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
           {links.map((link) => (
             <li
               key={link.name}
-              className="my-5 md:my-0 text-yellow-300  hover:text-blue-400 "
+              className="my-5 md:my-0 text-cyan-300  hover:text-blue-400 "
             >
               <a href="/">{link.name}</a>
             </li>

@@ -2,8 +2,7 @@ const Hero = () => {
   return (
     <div
       className={`w-full h-screen bg-blue-500  pt-60 flex flex-col gap-5 items-center justify-start
-       bg-back2
-      bg-center md:bg-top bg-no-repeat bg-cover `}
+       bg-back2 text-center bg-center md:bg-top bg-no-repeat bg-cover `}
     >
       <h1 className="text-white font-lobste text-6xl md:text-8xl ">
         ITALIAN EXPERIENCE
