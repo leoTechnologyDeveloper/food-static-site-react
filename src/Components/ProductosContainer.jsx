@@ -11,8 +11,6 @@ const ProductosContainer = () => {
     });
   }, []);
 
-  console.log(productos);
-
   return (
     <div className=" bg-slate-200">
       <h2 className="text-center py-3 bg-orange-500 text-white font-medium text-2xl">
