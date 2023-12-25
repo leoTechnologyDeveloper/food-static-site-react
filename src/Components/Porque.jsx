@@ -3,7 +3,7 @@ import Wave1 from "../assets/waves/wave1.svg";
 
 const Porque = () => {
   return (
-    <div className="bg-slate-200 my-10 p-4">
+    <div className="bg-slate-200 my-10 p-4 relative  pb-[100px] md:pb-[180px]">
       <div className=" w-11/12 md:w-9/12 flex-col  mx-auto">
         <h2 className="text-3xl my-8 font-bold">Por que Nosotros ?</h2>
         <p className="text-xl ">
@@ -36,7 +36,7 @@ const Porque = () => {
           aliquam velit harum nisi quas deserunt repellendus. Ab veniam
           explicabo facere dolore adipisci libero officia at.
         </p>
-        <ul className="my-6 text-xl flex flex-col gap-5">
+        <ul className="my-6 text-lg md:text-xl flex flex-col gap-5">
           <li>
             <IconStar />
             Los mejores prcios del mercado
@@ -55,7 +55,11 @@ const Porque = () => {
           </li>
         </ul>
       </div>
-      <img src={Wave1} alt="imagen fondo onda" />
+      <img
+        className="absolute bottom-0 left-0"
+        src={Wave1}
+        alt="imagen fondo onda"
+      />
     </div>
   );
 };
