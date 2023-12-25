@@ -21,7 +21,7 @@ const opiniones = [
 const Opiniones = () => {
   return (
     <div className="w-10/12 flex-col  mx-auto">
-      <h2 className="text-4xl my-8">Que dicen de Nuestros productos ?</h2>
+      <h2 className="text-3xl my-8">Que dicen de Nuestros productos ?</h2>
       <div className="flex flex-col md:flex-row  mx-auto justify-around">
         {opiniones.map((item) => (
           <CardOpinion key={item.id} opinion={item} />
