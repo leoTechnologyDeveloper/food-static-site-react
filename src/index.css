@@ -5,7 +5,7 @@
 
 
 @layer components{
-    .wapper{
+    .wrapper{
         @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
     }
 }

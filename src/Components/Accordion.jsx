@@ -14,12 +14,12 @@ const Accordion = (props) => {
         item.active === 1 ? "is-active bg-white border-2 border-blue-400" : ""
       } text-2xl `}
     >
-      <div className="flex items-center">
-        <div className="w-full duration-500 group-[.is-active]:font-bold">
+      <div className="flex items-center ">
+        <div className="w-full duration-500 group-[.is-active]:font-bold text-xl text-left">
           {item.question}
         </div>
         <div
-          className={`text-4xl origin-center   duration-500 cursor-pointer  group-[.is-active]:rotate-[180deg]  rounded-full font-bold   ${
+          className={`text-3xl origin-center   duration-500 cursor-pointer  group-[.is-active]:rotate-[180deg]  rounded-full font-semibold   ${
             item.active === 1 ? "text-red-500 " : " text-blue-600"
           }  `}
           onClick={handleToggleActive}
@@ -27,7 +27,7 @@ const Accordion = (props) => {
           {item.active === 1 ? "x" : "+"}
         </div>
       </div>
-      <div className="overflow-hidden max-h-0 duration-500 group-[.is-active]:max-h-[100px] text-blue-600 ">
+      <div className="overflow-hidden max-h-0 duration-500 group-[.is-active]:max-h-[100px] text-xl text-blue-600 text-left">
         {item.answer}
       </div>
     </div>
