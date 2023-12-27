@@ -5,16 +5,16 @@ import { useState } from "react";
 const Header = () => {
   let links = [
     { name: "Home", link: "/" },
-    { name: "Pastas", link: "/pastas" },
-    { name: "Pizzas", link: "/pizzas" },
-    { name: "Lasañas", link: "/drinks" },
+    { name: "Nosotros", link: "/nosotros" },
+    { name: "Productos", link: "/productos" },
+    { name: "Preguntas", link: "/Preguntas" },
   ];
 
   const [isOpen, setisOpen] = useState(false);
 
   return (
     <header className="bg-gray-900 shadow-md text-white w-full p-2 text-2xl md:h-16 fixed top-0 left-0 flex items-center">
-      <div className="py-4 px-7 w-full h-full flex flex-col md:flex-row justify-between items-start md:items-center contenedor ">
+      <div className="py-4 px-7 w-full h-full flex flex-col md:flex-row justify-between items-start md:items-center contenedor">
         <Logo />
 
         <div

@@ -1,13 +1,26 @@
 import { pedirDatos } from "../helpers/pedirDatos";
 import { useState, useEffect } from "react";
 import Producto from "./Producto";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 const ProductosContainer = () => {
   const [productos, setProductos] = useState([]);
 
+  // useEffect(() => {
+  //   pedirDatos().then((response) => {
+  //     setProductos(response);
+  //   });
+  // }, []);
+
   useEffect(() => {
-    pedirDatos().then((response) => {
-      setProductos(response);
+    const productosRef = collection(db, "productos");
+    getDocs(productosRef).then((resp) => {
+      setProductos(
+        resp.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
     });
   }, []);
 
