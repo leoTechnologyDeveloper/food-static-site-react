@@ -28,13 +28,13 @@ const Preguntas = () => {
     //   <div className="flex flex-col md:flex-row  mx-auto justify-around"></div>
     // </div>
 
-    <div className="flex-col  mx-auto wrapper w-full text-center">
+    <div className="flex flex-col items-center mx-auto wrapper w-full text-center">
       <h2 className="text-2xl md:text-3xl my-8 font-bold">
         Preguntas Frecuentes{" "}
       </h2>
       {/* <div className="flex flex-col md:flex-row  mx-auto justify-around"></div> */}
-      <div className=" flex justify-center items-center py-5  max-w-screen-lg">
-        <div className="list w-11/12 md:w-3/5">
+      <div className="  py-5  max-w-screen-lg">
+        <div className="list w-11/12 md:w-3/5  mx-auto flex justify-center items-center flex-wrap">
           {list.map((item, key) => (
             <Accordion key={key} datas={item} />
           ))}
