@@ -28,7 +28,10 @@ const Preguntas = () => {
     //   <div className="flex flex-col md:flex-row  mx-auto justify-around"></div>
     // </div>
 
-    <div className="flex flex-col items-center mx-auto wrapper w-full text-center">
+    <div
+      id="preguntas"
+      className="flex flex-col items-center mx-auto wrapper w-full text-center"
+    >
       <h2 className="text-2xl md:text-3xl my-8 font-bold">
         Preguntas Frecuentes{" "}
       </h2>

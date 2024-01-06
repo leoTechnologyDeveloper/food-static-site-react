@@ -25,7 +25,7 @@ const ProductosContainer = () => {
   }, []);
 
   return (
-    <div className=" bg-slate-200">
+    <div id="productos" className=" bg-slate-200 pt-14">
       <h2 className="text-center py-3 bg-orange-500 text-white font-medium text-2xl">
         PRODUCTOS
       </h2>

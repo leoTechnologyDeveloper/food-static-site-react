@@ -3,13 +3,17 @@ import Wave1 from "../assets/waves/wave1.svg";
 
 const Porque = () => {
   return (
-    <div className="bg-slate-200 my-10 p-4 relative  pb-[100px] md:pb-[180px]">
+    <div
+      id="nosotros"
+      className="bg-slate-200 my-10 p-6 pt-14 relative  pb-[100px] md:pb-[180px]"
+    >
       <div className=" w-11/12 md:w-9/12 flex-col  mx-auto">
         <h2 className="text-3xl my-8 font-bold">Por que Nosotros ?</h2>
         <p className="text-xl ">
-          Italian experience es una exquicita experiencia de Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Provident laborum animi
-          perspiciatis quibusdam error eaque autem nulla earum.
+          Italian experience es una exquicita experiencia de comida italiana,
+          peparada por chefs destacados y conocedores con experiencia en la rama
+          de pastas italianas y comida mediterránea, que pondrán en sus platos
+          sus innovadoras propuestas.
         </p>
         <div className="flex flex-col md:flex-row  mx-auto justify-around  gap-6 my-8">
           <img

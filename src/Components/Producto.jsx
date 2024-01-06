@@ -2,7 +2,7 @@ const Producto = ({ producto }) => {
   const { nombre, categoria, precio, imagen } = producto;
 
   return (
-    <div className="m-2 bg-white p-2 rounded-md flex flex-col  gap-3 w-full md:w-1/4 h-[300px] overflow-hidden">
+    <div className="m-2 bg-white p-2  rounded-md flex flex-col  gap-3 w-full md:w-1/4 h-[300px] overflow-hidden">
       <figure className="h-2/3 overflow-hidden">
         <img
           src={imagen}

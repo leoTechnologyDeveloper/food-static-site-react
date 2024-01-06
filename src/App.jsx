@@ -6,18 +6,21 @@ import Porque from "./Components/Porque";
 import Preguntas from "./Components/Preguntas";
 import Contacto from "./Components/Contacto";
 import Footer from "./Components/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <ProductosContainer />
-      <Opiniones />
-      <Porque />
-      <Preguntas />
-      <Contacto />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Hero />
+        <ProductosContainer />
+        <Opiniones />
+        <Porque />
+        <Preguntas />
+        <Contacto />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

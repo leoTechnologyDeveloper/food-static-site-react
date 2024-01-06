@@ -1,21 +1,24 @@
 import Logo from "./Logo.jsx";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   let links = [
-    { name: "Home", link: "/" },
-    { name: "Nosotros", link: "/nosotros" },
-    { name: "Productos", link: "/productos" },
-    { name: "Preguntas", link: "/Preguntas" },
+    { name: "Home", link: "#hero" },
+    { name: "Nosotros", link: "#nosotros" },
+    { name: "Productos", link: "#productos" },
+    { name: "Preguntas", link: "#preguntas" },
   ];
 
   const [isOpen, setisOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900 shadow-md text-white w-full p-2 text-2xl md:h-16 fixed top-0 left-0 flex items-center">
+    <header className="bg-gray-900 shadow-md text-white w-full p-2 text-2xl md:h-16 fixed top-0 left-0 flex items-center z-50">
       <div className="py-4 px-7 w-full h-full flex flex-col md:flex-row justify-between items-start md:items-center contenedor">
-        <Logo />
+        <HashLink to={"#hero"} smooth>
+          <Logo />
+        </HashLink>
 
         <div
           onClick={() => setisOpen(!isOpen)}
@@ -30,17 +33,22 @@ const Header = () => {
               : "-translate-y-full opacity-0 md:opacity-100"
           }`}
         >
-          {links.map((link) => (
+          {links.map((enlace) => (
             <li
-              key={link.name}
+              key={enlace.name}
               className="my-5 md:my-0 text-cyan-300  hover:text-blue-400 "
             >
-              <a href="/">{link.name}</a>
+              <HashLink to={enlace.link} smooth>
+                <span>{enlace.name}</span>
+              </HashLink>
             </li>
           ))}
-          <button className="bg-blue-500 px-3 py-2 mb-10 md:mb-0 rounded-xl inline-block hover:bg-blue-700">
-            Contact
-          </button>
+
+          <HashLink to={"#contacto"} smooth>
+            <button className="bg-blue-500 px-3 py-2 mb-10 md:mb-0 rounded-xl inline-block hover:bg-blue-700">
+              Contacto
+            </button>
+          </HashLink>
         </ul>
       </div>
     </header>
