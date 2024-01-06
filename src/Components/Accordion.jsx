@@ -20,7 +20,7 @@ const Accordion = (props) => {
         </div>
         <div
           className={`text-3xl origin-center   duration-500 cursor-pointer  group-[.is-active]:rotate-[180deg]  rounded-full font-semibold   ${
-            item.active === 1 ? "text-red-500 " : " text-blue-600"
+            item.active === 1 ? "text-orange-500 " : " text-blue-600"
           }  `}
           onClick={handleToggleActive}
         >

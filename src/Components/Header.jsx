@@ -27,7 +27,7 @@ const Header = () => {
           {isOpen ? <XMarkIcon /> : <Bars3Icon />}
         </div>
         <ul
-          className={`flex flex-col md:flex-row items-center  justify-center gap-5  md:static absolute left-0 bg-gray-900/90 w-screen h-screen md:h-5 md:w-auto z-5 ease-in duration-800 transition-all md:translate-y-0  md:p-2 duration-300 ${
+          className={`flex flex-col md:flex-row items-center  justify-center gap-5  md:static absolute left-0 bg-gray-900/75 w-screen h-screen md:h-5 md:w-auto z-5 ease-in duration-800 transition-all md:translate-y-0  md:p-2 duration-300 ${
             isOpen
               ? "translate-y-0 "
               : "-translate-y-full opacity-0 md:opacity-100"
@@ -36,7 +36,7 @@ const Header = () => {
           {links.map((enlace) => (
             <li
               key={enlace.name}
-              className="my-5 md:my-0 text-cyan-300  hover:text-blue-400 "
+              className="my-5 md:my-0 text-cyan-300  hover:text-orange-400 "
             >
               <HashLink to={enlace.link} smooth>
                 <span>{enlace.name}</span>
